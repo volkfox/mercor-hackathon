@@ -11,7 +11,7 @@ api_key = os.getenv("ANTHROPIC_API_KEY")
 
 client = Anthropic(api_key=api_key)
 N_TURNS = 10
-N_SIM = 5
+N_SIM = 10
 
 def main():
     print("Generating data for EIQ training via interviewer's emotional score simulation")
@@ -25,7 +25,7 @@ def main():
         {"name": "Casey (Low EQ)", "eq_level": "Low", "description": "Avoids responsibility, struggles with emotional awareness."},
     ]
 
-    for persona in personas[0:1]:
+    for persona in personas:
         scores = []
 
         for sim in range(1, N_SIM + 1):
@@ -84,6 +84,45 @@ def main():
                     except Exception as e:
                         print(f"Error during API call: {e}")
                         interviewee_response = "Sorry, I couldn't process that."
+                    
+                    # Call Anthropic API to make the interviewee's response logically complete
+                    try:
+                        completion_prompt = f"""
+                        The following is a response from a product management candidate during an interview. 
+                        Please make sure the response is logically complete by trimming any unfinished sentences or thoughts at the end of the blurb.
+                        Only return the trimmed response, and nothing else. If you don't have any changes to make, just return the original response.
+                        
+                        Example 1: 
+                        Input: "I'm a product manager with 3 years of experience working in two AI startups. I'm very good technically but am less exposed to the business side of things, which I know theoretically but not practically."
+                        Output: "I'm a product manager with 3 years of experience working in two AI startups. I'm very good technically but am less exposed to the business side of things, which I know theoretically but not practically."
+                        
+                        Example 2:
+                        Input: "I'm a product manager with 3 years of experience working in two AI startups. I'm very "
+                        Output: "I'm a product manager with 3 years of experience working in two AI startups. 
+                        
+                        Example 3:
+                        Input: "I resolved a technical issue on feature delivery by:
+
+                           1. Creating space for the technical team to explain the core issues without pressure - I organized a whiteboard session where engineers could break down the problem in detail
+                           2. Supporting the team tangibly - I took on stakeholder management to shield the engineers from constant status updates, giving them focused time to"
+                        
+                        Output: "I resolved a technical issue on feature delivery by:
+
+                           1. Creating space for the technical team to explain the core issues without pressure - I organized a whiteboard session where engineers could break down the problem in detail
+                           2. Supporting the team tangibly - I took on stakeholder management to shield the engineers from constant status updates."
+                        
+                        Response to trim: {interviewee_response}
+                        """
+                        completed_response = client.messages.create(
+                            model="claude-3-7-sonnet-20250219",
+                            max_tokens=300,
+                            messages=[{"role": "user", "content": completion_prompt}]
+                        )
+                        interviewee_response = completed_response.content[0].text.strip()
+                    except Exception as e:
+                        print(f"Error during API call for completion: {e}")
+                        interviewee_response = "Sorry, I couldn't process that."
+
 
                     print(f"\nCandidate: {interviewee_response}")
                     conversation_history.append(f"Interviewer: {interviewer_response}.")
