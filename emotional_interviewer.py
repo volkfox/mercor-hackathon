@@ -64,7 +64,7 @@ class Interviewer:
             else:
                 # Handle empty response
                 print("Warning: Received empty response from API")
-                return "I'm sorry, I'm having trouble formulating a response. Let's continue with the interview."
+                return "I do not have data to respond. Let's continue with the interview."
         except Exception as e:
             # Handle any API errors
             print(f"Error calling Anthropic API: {str(e)}")
@@ -178,6 +178,9 @@ class Interviewer:
             emotion_score = self.generate_emotion_score(internal_emotions)
             if DEBUG:
                 print(f"Emotion score: {emotion_score}")
+            
+            if not isinstance(emotion_score, int) or not (0 <= emotion_score <= 100):
+                emotion_score = 50
             # Generate internal monologue
             internal_thoughts = self.generate_internal_monologue().strip()
             # Strip the answer and only return the content between [thoughts]..[/thoughts] or the whole string if there are no tags
