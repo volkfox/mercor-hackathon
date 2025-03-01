@@ -1,0 +1,281 @@
+Loaded 12 scenarios from data/eq_scenarios_20250227-161517.csv
+Processing scenarios:   0%|          | 0/12 [00:00<?, ?it/s]
+Processing scenario 1/12 for persona Unknown
+
+--- Prompt Preview (first 200 chars) ---
+Based on the following scenario and conversation requirements, generate 10 DIVERSE conversation history variations:
+
+SCENARIO:
+Alexis has been promoted to team lead in a software development company. ...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+[
+  {
+    "variation_id": 1,
+    "variation_description": "Early stage with defensive resistance",
+    "conversation_objective": "Open Sarah up to discussing her interrupting behavior",
+    "conversat...
+--- End Preview ---
+
+Successfully generated 10 conversation history variations
+
+Processing variations:   0%|          | 0/10 [00:00<?, ?it/s][A
+Processing variations:  10%|█         | 1/10 [00:08<01:14,  8.24s/it][A
+Processing variations:  20%|██        | 2/10 [00:16<01:05,  8.17s/it][A
+Processing variations:  30%|███       | 3/10 [00:24<00:56,  8.05s/it][A
+Processing variations:  40%|████      | 4/10 [00:31<00:47,  7.87s/it][A
+Processing variations:  50%|█████     | 5/10 [00:40<00:41,  8.24s/it][A
+Processing variations:  60%|██████    | 6/10 [00:48<00:32,  8.12s/it][A
+Processing variations:  70%|███████   | 7/10 [00:57<00:24,  8.29s/it][A
+Processing variations:  80%|████████  | 8/10 [01:05<00:16,  8.40s/it][A
+Processing variations:  90%|█████████ | 9/10 [01:13<00:08,  8.15s/it][A
+Processing variations: 100%|██████████| 10/10 [01:22<00:00,  8.34s/it][AProcessing variations: 100%|██████████| 10/10 [01:22<00:00,  8.23s/it]
+Processing scenarios:   8%|▊         | 1/12 [01:54<20:54, 114.05s/it]
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "I appreciate your enthusiasm for keeping things moving, Sarah. It's clear you're passionate about the project's progress. Can you help me understand how you think Mike's commu...
+--- End Preview ---
+
+Extracted JSON substring: {
+  "optimal_response": "I appreciate your enthusiasm for keeping things moving, Sarah. It's clear y...
+Failed to parse JSON from response: Invalid control character at: line 3 column 70 (char 438)
+Failed to extract valid optimal response data
+
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "Mike, I hear that you're feeling like your ideas aren't valued, and I can see how much that affects you. It takes courage to share these feelings, and I appreciate your openne...
+--- End Preview ---
+
+Successfully generated optimal response
+Progress saved to data/eq_training_data_full.csv (1 samples)
+
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "That's an excellent question, Sarah. I think it's important that we all take ownership of these norms as a team. Perhaps we could have a quick check-in at the start of each me...
+--- End Preview ---
+
+Successfully generated optimal response
+Progress saved to data/eq_training_data_full.csv (2 samples)
+
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "I hear you, Mike. It sounds like you're feeling really frustrated and unheard. I want you to know that your contributions are valuable, and I'm here to listen. Can we take a s...
+--- End Preview ---
+
+Successfully generated optimal response
+Progress saved to data/eq_training_data_full.csv (3 samples)
+
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "Thank you both for your honesty and openness. Sarah, your apology shows great self-awareness. Mike, how does hearing Sarah's perspective make you feel? Is there anything you'd...
+--- End Preview ---
+
+Successfully generated optimal response
+Progress saved to data/eq_training_data_full.csv (4 samples)
+
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "I hear your frustration, Mike, and I appreciate you sharing that. It's natural to feel discouraged after a setback, but I've seen the progress we've made as a team. Let's take...
+--- End Preview ---
+
+Successfully generated optimal response
+Progress saved to data/eq_training_data_full.csv (5 samples)
+
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "I understand you may not see it the same way, Sarah. Your enthusiasm and creativity are huge assets to the team. I'm bringing this up because I value your contributions and wa...
+--- End Preview ---
+
+Extracted JSON substring: {
+  "optimal_response": "I understand you may not see it the same way, Sarah. Your enthusiasm and cr...
+Failed to parse JSON from response: Invalid control character at: line 3 column 70 (char 440)
+Failed to extract valid optimal response data
+
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "Mike, I'm really impressed by your willingness to look inward. It takes courage to consider our own role in a situation. Can you tell me more about what you've realized? This ...
+--- End Preview ---
+
+Successfully generated optimal response
+Progress saved to data/eq_training_data_full.csv (6 samples)
+
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "I appreciate your willingness to move forward, Sarah. However, I sense there might still be some unresolved feelings beneath the surface. It's important to me that both you an...
+--- End Preview ---
+
+Successfully generated optimal response
+Progress saved to data/eq_training_data_full.csv (7 samples)
+
+--- Prompt Preview (first 200 chars) ---
+Given the following scenario, conversation history, and emotional intelligence profile, generate the optimal next response to achieve the objective:
+
+PERSONA:
+Unknown
+
+SCENARIO:
+Alexis has been promot...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+{
+  "optimal_response": "Sarah, thank you for sharing that with me. It takes courage to be vulnerable, and I appreciate your honesty. Your fear of being overlooked is understandable, and I want you to...
+--- End Preview ---
+
+Successfully generated optimal response
+Progress saved to data/eq_training_data_full.csv (8 samples)
+Waiting 10 seconds before next scenario...
+
+Processing scenario 2/12 for persona Unknown
+
+--- Prompt Preview (first 200 chars) ---
+Based on the following scenario and conversation requirements, generate 10 DIVERSE conversation history variations:
+
+SCENARIO:
+Alexis is a software developer who has been assigned to lead a small team...
+--- End Prompt ---
+
+Making API call (attempt 1/3)
+
+--- Response Preview (first 200 chars) ---
+```json
+[
+  {
+    "variation_id": 1,
+    "variation_description": "Early stage with defensive resistance",
+    "conversation_objective": "Break through Jamie's initial defensiveness and establish open...
+--- End Preview ---
+
+Extracted JSON substring: [
+  {
+    "variation_id": 1,
+    "variation_description": "Early stage with defensive resistance",
+ ...
+Successfully generated 10 conversation history variations
+
+Processing variations:   0%|          | 0/10 [00:00<?, ?it/s][A
+Processing variations:  10%|█         | 1/10 [00:08<01:18,  8.74s/it][A
+Processing variations:  20%|██        | 2/10 [00:16<01:04,  8.12s/it][A
+Processing variations:  30%|███       | 3/10 [00:25<01:01,  8.76s/it][A
+Processing variations:  40%|████      | 4/10 [00:34<00:50,  8.48s/it][A
+Processing variations:  50%|█████     | 5/10 [00:41<00:40,  8.18s/it][A
+Processing variations:  60%|██████    | 6/10 [00:49<00:31,  7.99s/it][A
+Processing variations:  70%|███████   | 7/10 [00:57<00:23,  7.97s/it][A
+Processing variations:  80%|████████  | 8/10 [01:05<00:16,  8.18s/it][A
+Processing variations:  90%|█████████ | 9/10 [01:13<00:08,  8.13s/it][A
+Processing variations: 100%|██████████| 10/10 [01:22<00:00,  8.17s/it][AProcessing variations: 100%|██████████| 10/10 [01:22<00:00,  8.21s/it]
+Processing scenarios:  17%|█▋        | 2/12 [03:50<19:12, 115.20s/it]/opt/miniconda3/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
