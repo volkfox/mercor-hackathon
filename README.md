@@ -1,6 +1,17 @@
 # EQ Scenario Generator
 
-A synthetic data generation pipeline for creating emotional intelligence scenarios and multi-turn conversations.
+## A synthetic data generation pipeline for creating emotional intelligence scenarios and multi-turn conversations.
+
+The "interviewer" part consists of two files:
+- `emotional_interviewer.py`: The main file that defines the Interviewer class and the conversation flow.
+The interview is stateful (accumulating conversation history) and at every turn it generates:
+- emotional interviewer's monologue
+- score for emotional state (integer range from 0 to 100)
+- internal interviewer's monologue
+- external interviewer's monologue
+
+- `test_interviewer.py`: A sample test script that demonstrates how to use the interviewer.
+
 
 ## Setup
 
