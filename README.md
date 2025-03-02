@@ -1,5 +1,14 @@
 # EQ Scenario Generator
 
+HuggingFace model links:
+https://huggingface.co/sonyashijin/phi_4_interviewee_EQ_reasoning_LoRA
+https://huggingface.co/sonyashijin/phi_4_bad_EQ_interviewee_16bit_merged
+
+# Frontend live demo with HeyGen:
+
+
+
+
 ## A synthetic data generation pipeline for creating emotional intelligence scenarios and multi-turn conversations.
 
 The "interviewer" part is hardcoded for a job interview for Product Management Position and consists of two files:
