@@ -1,4 +1,4 @@
-# EQ Scenario Generator
+# a platform for crowdsourcing human EQ data from job candidates
 
 HuggingFace model links:
 https://huggingface.co/sonyashijin/phi_4_interviewee_EQ_reasoning_LoRA
