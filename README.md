@@ -12,9 +12,9 @@ Problem:
 Lack of quality data to improve LLMs on soft skills (EIQ): Most AI models lack real-world, high-quality data for training in emotional intelligence and nuanced human communication, leading to poor soft-skill reasoning.
 Lack of opportunities to improve human soft skills for job interviews: Job candidates struggle to get structured, personalized feedback on soft skills, making it difficult to improve for high-stakes remote interviews.
 
-Our solution: An EQ training platform that helps candidates practice and improve their soft skills for remote job interviews. It provides real-time feedback on emotional intelligence and communication—while also collecting high-quality data to enhance LLM emotional intelligence. To demonstrate the value of the collected data, we fine-tuned a model on high-EQ responses from the platform, showing measurable improvements in soft skill reasoning.
+Our solution: An EQ training platform that helps candidates practice and improve their soft skills for remote job interviews. It provides real-time feedback on emotional intelligence and communication—while also collecting high-quality data to enhance LLM emotional intelligence. To demonstrate the value of the collected data, we fine-tuned a model on high-EQ responses from the platform, showing measurable improvements in soft skill reasoning with our EQ scorer.
 
-we generated synthetic data to mimic data collected from our platform and finetuned on filtered platform data to show data viability for improving LLM EQ - **our platform offers a way to crowd-source valuable human EQ data for LLM training**
+we generated synthetic data to mimic data collected from our platform and finetuned models via GRPO, with our platform EQ scorer as the reward function, on filtered platform data to show data viability for improving LLM EQ - **our platform offers a way to crowd-source valuable human EQ data for LLM training**
 
 
 The "interviewer" part is hardcoded for a job interview for Product Management Position and consists of two files:
