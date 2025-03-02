@@ -21,6 +21,7 @@ The interview is stateful (accumulating conversation history) and at every turn 
 
 - `test_interviewer.py`: A sample test script that demonstrates how to use the interviewer.
 
+we generated synthetic data to mimic data collected from our platform and finetuned on filtered platform data to show data viability for improving LLM EQ - **our platform offers a way to crowd-source valuable human EQ data for LLM training**
 
 ## Setup
 
