@@ -9,7 +9,7 @@ https://huggingface.co/sonyashijin/phi_4_bad_EQ_interviewee_16bit_merged
 <img width="713" alt="image" src="https://github.com/user-attachments/assets/6b413907-8c30-403f-9e1f-0924d44d8c61" />
 https://github.com/aadinash/mercor-frontend
 
-
+we generated synthetic data to mimic data collected from our platform and finetuned on filtered platform data to show data viability for improving LLM EQ - **our platform offers a way to crowd-source valuable human EQ data for LLM training**
 
 ## A synthetic data generation pipeline for creating emotional intelligence scenarios and multi-turn conversations.
 
