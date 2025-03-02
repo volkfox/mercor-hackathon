@@ -6,6 +6,7 @@ https://huggingface.co/sonyashijin/phi_4_bad_EQ_interviewee_16bit_merged
 
 # Frontend live demo with HeyGen:
 
+<img width="713" alt="image" src="https://github.com/user-attachments/assets/6b413907-8c30-403f-9e1f-0924d44d8c61" />
 
 
 
