@@ -17,18 +17,6 @@ Our solution: An EQ training platform that helps candidates practice and improve
 we generated synthetic data to mimic data collected from our platform and finetuned models via GRPO, with our platform EQ scorer as the reward function, on filtered platform data to show data viability for improving LLM EQ - **our platform offers a way to crowd-source valuable human EQ data for LLM training**
 
 
-The "interviewer" part is hardcoded for a job interview for Product Management Position and consists of two files:
-- `emotional_interviewer.py`: The main file that defines the Interviewer class and the conversation flow.
-The interview is stateful (accumulating conversation history) and at every turn it generates:
-- emotional interviewer's monologue
-- score for emotional state (integer range from 0 to 100)
-- internal interviewer's monologue
-- external interviewer's monologue
-
-- `test_interviewer.py`: A sample test script that demonstrates how to use the interviewer.
-
-we generated synthetic data to mimic data collected from our platform and finetuned on filtered platform data to show data viability for improving LLM EQ - **our platform offers a way to crowd-source valuable human EQ data for LLM training**
-
 ## Setup
 
 1. Clone this repository
